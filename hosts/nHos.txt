@@ -28,7 +28,6 @@
 127.0.0.1 wwis-dubc1-vip60.adobe.com
 
 # pd服务屏蔽
-127.0.0.1 download.parallels.com
 127.0.0.1 toolbox.parallels.com
 127.0.0.1 desktop.parallels.com
 127.0.0.1 update.parallels.com
