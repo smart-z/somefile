@@ -26,7 +26,7 @@
 127.0.0.1 wwis-dubc1-vip60.adobe.com
 127.0.0.1 activate-sjc0.adobe.com
 127.0.0.1 wwis-dubc1-vip60.adobe.com
-
+# ############# nHosts ##########################
 # BetterTouchTool;
 127.0.0.1 bettertouchtool.net
 127.0.0.1 updates.bettertouchtool.net
