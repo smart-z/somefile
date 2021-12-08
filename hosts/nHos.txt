@@ -53,5 +53,6 @@
 # msn
 127.0.0.1 ntp.msn.cn
 
-
-
+# houdah spot
+127.0.0.1 dl.houdah.com
+127.0.0.1 www.houdah.com
