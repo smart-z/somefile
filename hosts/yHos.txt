@@ -1,26 +1,19 @@
-# ############# YHosts ##########################
-# ############# YHosts ##########################
-# ############# YHosts ##########################
+# ############# yHosts ##########################
 
 13.35.8.105 images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com
-
 104.20.6.63 bandwagonhost.com
-
 104.26.13.50 tracker.m-team.cc
 104.26.12.50 tracker.m-team.cc
 45.35.17.203 kp.m-team.cc
-
 # tmdb
 104.16.61.155 image.tmdb.org
 13.35.67.86 api.themoviedb.org
 54.192.151.79 www.theomviedb.org
 13.224.161.90 api.themoviedb.org
-
 # deviantart
 52.84.150.14    pre00.deviantart.net
 99.84.254.116   orig00.deviantart.net
 99.84.254.32    t00.deviantart.net
-
 52.85.154.83    deviantart.com
 52.85.154.131   www.deviantart.com
 54.70.219.228   deviantart.net

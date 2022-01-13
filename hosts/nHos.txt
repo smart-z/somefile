@@ -1,13 +1,9 @@
 # ############# nHosts ##########################
-# ############# nHosts ##########################
-# ############# nHosts ##########################
 
 127.0.0.1 www.sublimetext.com
 127.0.0.1 license.sublimehq.com
-
 127.0.0.1 www.flinto.com
 127.0.0.1 mackeeper.com
-
 # Adobe
 127.0.0.1 activate.adobe.com
 127.0.0.1 ereg.adobe.com
@@ -29,34 +25,42 @@
 127.0.0.1 activate-sea.adobe.com
 127.0.0.1 wwis-dubc1-vip60.adobe.com
 127.0.0.1 activate-sjc0.adobe.com
-127.0.0.1 wwis-dubc1-vip60.adobe.com
-
 # BetterTouchTool;
 127.0.0.1 bettertouchtool.net
 127.0.0.1 updates.bettertouchtool.net
 127.0.0.1 folivora.ai
 127.0.0.1 updates.boastr.net
 127.0.0.1 updates.folivora.ai
-127.0.0.1 folivora.ai
 127.0.0.1 www.folivora.ai
-127.0.0.1 updates.boastr.net
-127.0.0.1 updates.folivora.ai
-127.0.0.1 updates.bettertouchtool.net
-127.0.0.1 bettertouchtool.net
-
-
 # Beyond Compare;
 127.0.0.1 www.scootersoftware.com
 127.0.0.1 scootersoftware.com
-
 # Macs Fan Control
 127.0.0.1 crystalidea.com
 127.0.0.1 www.crystalidea.com
 127.0.0.1 v3pro.crystalidea.com
-
 # msn
 127.0.0.1 ntp.msn.cn
-
 # houdah spot
 127.0.0.1 dl.houdah.com
 127.0.0.1 www.houdah.com
+# pd服务屏蔽
+127.0.0.1 toolbox.parallels.com
+127.0.0.1 desktop.parallels.com
+127.0.0.1 update.parallels.com
+127.0.0.1 account.parallels.com
+# some hos
+127.0.0.1 gvod.aiseejapp.atianqi.com
+127.0.0.1 stat.pandora.xiaomi.com
+127.0.0.1 upgrade.mishop.pandora.xiaomi.com
+127.0.0.1 logonext.tv.kuyun.com
+127.0.0.1 config.kuyun.com
+127.0.0.1 mishop.pandora.xiaomi.com
+127.0.0.1 dvb.pandora.xiaomi.com
+127.0.0.1 api.ad.xiaomi.com
+127.0.0.1 de.pandora.xiaomi.com
+127.0.0.1 data.mistat.xiaomi.com
+127.0.0.1 jellyfish.pandora.xiaomi.com
+127.0.0.1 gallery.pandora.xiaomi.com
+127.0.0.1 o2o.api.xiaomi.com
+127.0.0.1 bss.pandora.xiaomi.com
