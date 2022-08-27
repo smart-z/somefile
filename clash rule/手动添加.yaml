@@ -1,10 +1,10 @@
-payload:
-  - DOMAIN-SUFFIX,playno1.com,🇭🇰 香港节点
-  - DOMAIN-SUFFIX,javdb.com,🇭🇰 香港节点
 
-  - DOMAIN-SUFFIX,dmm.co.jp,🇯🇵 日本节点
+ - DOMAIN-SUFFIX,playno1.com,🇭🇰 香港节点
+ - DOMAIN-SUFFIX,javdb.com,🇭🇰 香港节点
 
-  - DOMAIN-SUFFIX,api-drive.mypikpak.com,🇭🇰 香港节点
-  - DOMAIN-SUFFIX,access.mypikpak.com,🇭🇰 香港节点
+ - DOMAIN-SUFFIX,dmm.co.jp,🇯🇵 日本节点
 
-  - DOMAIN-SUFFIX,mypikpak.com,DIRECT
+ - DOMAIN,api-drive.mypikpak.com,🇭🇰 香港节点
+ - DOMAIN,access.mypikpak.com,🇭🇰 香港节点
+
+ - DOMAIN-SUFFIX,mypikpak.com,DIRECT
