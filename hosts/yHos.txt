@@ -21,3 +21,6 @@
 99.84.104.23    a.deviantart.net
 99.84.104.59    e.deviantart.net
 99.84.104.59    i.deviantart.net
+# game
+99.84.140.12 inbox.brawlstars.com
+# supercell.helpshift.com
