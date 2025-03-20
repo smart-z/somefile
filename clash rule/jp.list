@@ -7,15 +7,4 @@
 - DOMAIN-SUFFIX,recaptcha.net
 - DOMAIN-KEYWORD,cloudflare
 
-- DOMAIN-SUFFIX,claude.ai
-# - DOMAIN-SUFFIX,bard.google.com
-# - DOMAIN-SUFFIX,copilot.microsoft.com
 - DOMAIN-SUFFIX,designer.microsoft.com
-
-
-# - DOMAIN-SUFFIX,gmail.com
-# - DOMAIN-SUFFIX,tiktok.com
-# - DOMAIN-SUFFIX,bing.com
-# - DOMAIN-SUFFIX,openai.com
-# - DOMAIN-SUFFIX,poe.com
-# - DOMAIN-SUFFIX,sentry.io
