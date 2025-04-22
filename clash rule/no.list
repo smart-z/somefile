@@ -25,12 +25,12 @@ DOMAIN-SUFFIX,activate-sea.adobe.com
 DOMAIN-SUFFIX,wwis-dubc1-vip60.adobe.com
 DOMAIN-SUFFIX,activate-sjc0.adobe.com
 # BetterTouchTool;
-DOMAIN-SUFFIX,bettertouchtool.net
-DOMAIN-SUFFIX,updates.bettertouchtool.net
-DOMAIN-SUFFIX,folivora.ai
-DOMAIN-SUFFIX,updates.boastr.net
-DOMAIN-SUFFIX,updates.folivora.ai
-DOMAIN-SUFFIX,www.folivora.ai
+# DOMAIN-SUFFIX,bettertouchtool.net
+# DOMAIN-SUFFIX,updates.bettertouchtool.net
+# DOMAIN-SUFFIX,folivora.ai
+# DOMAIN-SUFFIX,updates.boastr.net
+# DOMAIN-SUFFIX,updates.folivora.ai
+# DOMAIN-SUFFIX,www.folivora.ai
 # Beyond Compare;
 DOMAIN-SUFFIX,www.scootersoftware.com
 DOMAIN-SUFFIX,scootersoftware.com
