@@ -14,3 +14,5 @@ DOMAIN-SUFFIX,userapi.com
 DOMAIN-SUFFIX,deovr.com
 
 DOMAIN-KEYWORD,adidas
+
+PROCESS-NAME,qbittorrent
