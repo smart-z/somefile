@@ -1,32 +1,6 @@
 DOMAIN-SUFFIX,ccmdls.adobe.com
 
-DOMAIN-SUFFIX,oculus.com
-DOMAIN-SUFFIX,oculuscdn.com
-DOMAIN-SUFFIX,graph.oculus.com
-DOMAIN-SUFFIX,www.oculus.com
-DOMAIN-SUFFIX,securecdn.oculus.com
-
 DOMAIN-SUFFIX,akamaized.net
-
-DOMAIN-SUFFIX,fbcdn.net
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,xr.facebook.com
-DOMAIN-SUFFIX,b-www.facebook.com
-DOMAIN-SUFFIX,edge-mqtt.facebook.com
-DOMAIN-SUFFIX,gateway.facebook.com
-DOMAIN-SUFFIX,graph.facebook.com
-DOMAIN-SUFFIX,lookaside.facebook.com
-DOMAIN-SUFFIX,m.facebook.com
-DOMAIN-SUFFIX,mqtt-mini.facebook.com
-DOMAIN-SUFFIX,rupload.facebook.com
-DOMAIN-SUFFIX,web.facebook.com
-DOMAIN-SUFFIX,www.facebook.com
-DOMAIN-SUFFIX,graph.facebook-hardware.com
-DOMAIN-SUFFIX,m.me
-DOMAIN-SUFFIX,messenger.com
-DOMAIN-SUFFIX,meta.graph.meta.com
-DOMAIN-SUFFIX,portal.fb.com
-DOMAIN-SUFFIX,prod.facebookvirtualassistant.com
 
 DOMAIN-SUFFIX,r11.c.lencr.org
 DOMAIN-SUFFIX,vrbo.com
