@@ -65,4 +65,4 @@
 127.0.0.1 o2o.api.xiaomi.com
 127.0.0.1 bss.pandora.xiaomi.com
 
-127.0.0.1 releases.arc.net
+# 127.0.0.1 releases.arc.net
