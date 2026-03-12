@@ -27,10 +27,3 @@ DOMAIN-SUFFIX,easebar.com
 ## AI
 DOMAIN-SUFFIX,hf.co
 DOMAIN-SUFFIX,models.topazlabs.com
-
-
-## 国外网盘
-DOMAIN-SUFFIX,userapi.com
-DOMAIN-SUFFIX,akirabox.com
-DOMAIN-SUFFIX,userstorage.mega.co.nz
-DOMAIN-SUFFIX,mediafire.com
