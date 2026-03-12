@@ -2,7 +2,6 @@ DOMAIN-SUFFIX,surrit.com
 
 DOMAIN-SUFFIX,cdn.123av.me
 
-DOMAIN-SUFFIX,akirabox.com
 
 DOMAIN-SUFFIX,developer.apple.com
 
@@ -11,7 +10,6 @@ DOMAIN-SUFFIX,eagle.cool
 DOMAIN-SUFFIX,zdassets.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,akamaiedge.net
-DOMAIN-SUFFIX,userapi.com
 DOMAIN-SUFFIX,deovr.com
 
 DOMAIN-KEYWORD,adidas
@@ -24,6 +22,15 @@ DOMAIN-SUFFIX,tracker.m-team.cc
 
 DOMAIN-SUFFIX,decrypt.day
 
+DOMAIN-SUFFIX,easebar.com
+
+## AI
 DOMAIN-SUFFIX,hf.co
 DOMAIN-SUFFIX,models.topazlabs.com
-DOMAIN-SUFFIX,easebar.com
+
+
+## 国外网盘
+DOMAIN-SUFFIX,userapi.com
+DOMAIN-SUFFIX,akirabox.com
+DOMAIN-SUFFIX,userstorage.mega.co.nz
+DOMAIN-SUFFIX,mediafire.com
