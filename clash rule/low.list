@@ -16,3 +16,10 @@ DOMAIN-SUFFIX,clara.iwara.tv
 
 DOMAIN-SUFFIX,boomio-cdn.com
 DOMAIN-SUFFIX,us-cdn08-prem.boomio-cdn.com
+
+
+## 国外网盘
+DOMAIN-SUFFIX,userapi.com
+DOMAIN-SUFFIX,akirabox.com
+DOMAIN-SUFFIX,userstorage.mega.co.nz
+DOMAIN-SUFFIX,mediafire.com
