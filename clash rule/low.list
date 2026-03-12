@@ -18,6 +18,9 @@ DOMAIN-SUFFIX,boomio-cdn.com
 DOMAIN-SUFFIX,us-cdn08-prem.boomio-cdn.com
 
 
+DOMAIN-SUFFIX,cdn.123av.me
+
+
 ## 国外网盘
 DOMAIN-SUFFIX,userapi.com
 DOMAIN-SUFFIX,akirabox.com
