@@ -1,3 +1,5 @@
+## 用于专门下载的节点，放一些耗费流量的大户，但是放在下载节点
+
 DOMAIN-SUFFIX,ccmdls.adobe.com
 
 DOMAIN-SUFFIX,akamaized.net
