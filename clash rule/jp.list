@@ -15,4 +15,11 @@ DOMAIN-SUFFIX,designer.microsoft.com
 
 DOMAIN-SUFFIX,bilibili.tv
 
+## DOMAIN-SUFFIX,apple-relay.akamaized.net
+## DOMAIN-SUFFIX,apple-relay.apple.com
+## DOMAIN-SUFFIX,apple-relay.cloudflare.com
+## DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+## DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
 ## DOMAIN-SUFFIX,push.apple.com
+## DOMAIN-SUFFIX,api.push.apple.com
+## DOMAIN-SUFFIX,courier.push.apple.com
