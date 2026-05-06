@@ -4,6 +4,7 @@
 127.0.0.1 license.sublimehq.com
 127.0.0.1 www.flinto.com
 127.0.0.1 mackeeper.com
+127.0.0.1 v3.paddleapi.com
 # Adobe
 127.0.0.1 activate.adobe.com
 127.0.0.1 ereg.adobe.com
