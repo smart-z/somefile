@@ -1,66 +1,391 @@
-## zsssssssssssssssssssssssssssssssssssssssssssssssssss
-DOMAIN-SUFFIX,www.sublimetext.com
-DOMAIN-SUFFIX,license.sublimehq.com
-DOMAIN-SUFFIX,www.flinto.com
-DOMAIN-SUFFIX,mackeeper.com
-DOMAIN-SUFFIX,v3.paddleapi.com
-# Adobe
-DOMAIN-SUFFIX,activate.adobe.com
-DOMAIN-SUFFIX,ereg.adobe.com
-DOMAIN-SUFFIX,hlrcv.stage.adobe.com
-DOMAIN-SUFFIX,lm.licenses.adobe.com
-DOMAIN-SUFFIX,lmlicenses.wip4.adobe.com
-DOMAIN-SUFFIX,na1r.services.adobe.com
-DOMAIN-SUFFIX,na2m-pr.licenses.adobe.com
-DOMAIN-SUFFIX,practivate.adobe.com
-DOMAIN-SUFFIX,wip.adobe.com
-DOMAIN-SUFFIX,activate.wip3.adobe.com
-DOMAIN-SUFFIX,wip3.adobe.com
-DOMAIN-SUFFIX,3dns-3.adobe.com
-DOMAIN-SUFFIX,3dns-2.adobe.com
-DOMAIN-SUFFIX,adobe-dns.adobe.com
-DOMAIN-SUFFIX,adobe-dns-2.adobe.com
-DOMAIN-SUFFIX,adobe-dns-3.adobe.com
-DOMAIN-SUFFIX,ereg.wip3.adobe.com
-DOMAIN-SUFFIX,activate-sea.adobe.com
-DOMAIN-SUFFIX,wwis-dubc1-vip60.adobe.com
-DOMAIN-SUFFIX,activate-sjc0.adobe.com
-# BetterTouchTool;
-# DOMAIN-SUFFIX,bettertouchtool.net
-# DOMAIN-SUFFIX,updates.bettertouchtool.net
-# DOMAIN-SUFFIX,folivora.ai
-# DOMAIN-SUFFIX,updates.boastr.net
-# DOMAIN-SUFFIX,updates.folivora.ai
-# DOMAIN-SUFFIX,www.folivora.ai
-# Beyond Compare;
-DOMAIN-SUFFIX,www.scootersoftware.com
-DOMAIN-SUFFIX,scootersoftware.com
-# Macs Fan Control
-DOMAIN-SUFFIX,crystalidea.com
-DOMAIN-SUFFIX,www.crystalidea.com
-DOMAIN-SUFFIX,v3pro.crystalidea.com
-# msn
-DOMAIN-SUFFIX,ntp.msn.cn
-# houdah spot
-DOMAIN-SUFFIX,dl.houdah.com
-DOMAIN-SUFFIX,www.houdah.com
-# pd服务屏蔽
-DOMAIN-SUFFIX,toolbox.parallels.com
-DOMAIN-SUFFIX,desktop.parallels.com
-DOMAIN-SUFFIX,update.parallels.com
-DOMAIN-SUFFIX,account.parallels.com
-# some hos
-DOMAIN-SUFFIX,gvod.aiseejapp.atianqi.com
-DOMAIN-SUFFIX,stat.pandora.xiaomi.com
-DOMAIN-SUFFIX,upgrade.mishop.pandora.xiaomi.com
-DOMAIN-SUFFIX,logonext.tv.kuyun.com
-DOMAIN-SUFFIX,config.kuyun.com
-DOMAIN-SUFFIX,mishop.pandora.xiaomi.com
-DOMAIN-SUFFIX,dvb.pandora.xiaomi.com
-DOMAIN-SUFFIX,api.ad.xiaomi.com
-DOMAIN-SUFFIX,de.pandora.xiaomi.com
-DOMAIN-SUFFIX,data.mistat.xiaomi.com
-DOMAIN-SUFFIX,jellyfish.pandora.xiaomi.com
-DOMAIN-SUFFIX,gallery.pandora.xiaomi.com
-DOMAIN-SUFFIX,o2o.api.xiaomi.com
-DOMAIN-SUFFIX,bss.pandora.xiaomi.com
+time: 2026年05月10日 11:19:58
+# edit link https://gist.github.com/smart-z/efe4771154a5d664454bb6b687235d67/edit
+# view link https://gist.githubusercontent.com/smart-z/efe4771154a5d664454bb6b687235d67/raw/ik-gist.yaml
+# 加速 link https://ghfast.top/ ghproxy
+# qichiyu 博客提到的 github 地址上的配置文件 https://github.com/qichiyuhub/rule/tree/master/config/Clash
+# https://wiki.metacubex.one/config/dns/#nameserver
+######### 锚点 start #######
+
+#这里是订阅更新和延迟测试相关的
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 1200}}
+######### 锚点 end #######
+
+# url 里填写自己的订阅,名称不能重复
+proxy-providers:
+  provider1:
+    <<: *p
+    url: "https://4nzvq.no-mad-world.club/link/OZxVdFJ7sBEG9NaC?clash=3&extend=1"
+  provider2:
+    <<: *p
+    url: "https://4nzvq.no-mad-world.club/link/uEzoeYCiGIw7R3dO?clash=3&extend=1"
+  # provider2:
+  #   <<: *p
+  #   url: ""
+  #   override:
+  #     #绕过自签证书
+  #     skip-cert-verify: true
+  #     udp: true
+  #     down: "50 Mbps"
+  #     up: "50 Mbps"
+
+# https://axipd.no-mad-world.club/link/JX31kP7KgWhypfBe?clash=3&extend=1
+# https://axipd.no-mad-world.club/link/uEzoeYCiGIw7R3dO?clash=3&extend=1
+
+# 节点信息
+proxies:
+  - {name: 直连, type: direct, udp: true}
+
+global-ua: mihomo
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7894
+ipv6: false
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+external-controller: '[::]:9090'
+
+geodata-mode: false
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 48
+# geox-url:
+#   geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+#   mmdb: "https://mirror.ghproxy.com/https:// github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.metadb"
+#   geoip: "https://mirror.ghproxy.com/https:// github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+#   asn: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+geox-url:
+  geosite: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb
+  geoip: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+  asn: https://gh-proxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+
+dns:
+  enable: true
+  cache-algorithm: arc
+  prefer-h3: false
+  use-system-hosts: true
+  use-hosts: true
+  listen: '[::]:1053'
+  ipv6: false
+  respect-rules: false # 核心修改：关闭它，解决所有死锁和套娃烦恼
+  enhanced-mode: fake-ip
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "+.lan"
+    - "+.local"
+    - geosite:cn
+    - geosite:private
+    - "rule-set:private_domain,cn_domain"
+    - "+.services.googleapis.cn"
+    - "+.xn--ngstr-lra8j.com"
+    - "time.*.com"
+    - "+.pool.ntp.org"
+    - "+.ntp.tencent.com"
+    - "+.ntp1.aliyun.com"
+    - "+.ntp.ntsc.ac.cn"
+    - "+.cn.ntp.org.cn"
+    - "geosite:category-games@cn"
+  # 默认 dns
+  default-nameserver:
+    - 116.228.111.118
+    - 180.168.255.18
+    - 119.29.29.29
+    - 223.5.5.5
+    - 223.6.6.6
+    - 114.114.114.114
+    - 8.8.8.8
+    - tls://223.5.5.5
+    - tls://223.6.6.6
+    - tls://1.12.12.12
+    - tls://120.53.53.53
+    # - tls://223.5.5.5:853
+  nameserver:
+    - 116.228.111.118
+    - 180.168.255.18
+    - 119.29.29.29
+    - 223.5.5.5
+    - tls://223.5.5.5
+    - tls://223.6.6.6
+    - tls://dot.pub
+    - tls://1.12.12.12
+    - tls://120.53.53.53
+    # - https://doh.pub/dns-query
+  fallback:
+    # 使用 IP 形式的 DoH，避免域名（如 dns.google）被国内 DNS 污染导致 DoH 握手失败
+    - https://8.8.8.8/dns-query           # Google DoH（IP 直连，无需解析域名）
+    - https://1.1.1.1/dns-query           # Cloudflare DoH（IP 直连）
+    - https://dns.alidns.com/dns-query    # 阿里 DoH（国内域名，不被污染）
+  # proxy-server-nameserver:
+  #   # 兜底：解析其他没有特殊策略的机场节点（必须为公共 DNS，防止多机场冲突）
+  #   - https://doh.pub/dns-query
+  #   - https://dns.alidns.com/dns-query
+  # proxy-server-nameserver-policy:
+    # 精准狙击：只有机场 1 的节点域名，才用它的私有 TCP DNS 解析
+    # "+.v51124-4.qpon": "tcp://9d9161805b3894600d09cafb3e4b2e2aef43076b.9fe06a.fyi:54"
+    # 仅用于解析机场代理节点的域名（如 hk01.example.com）
+    # 使用 DoH（加密 DNS），防止节点域名被运营商 DNS 污染
+    # - https://1.1.1.1/dns-query   # Cloudflare DoH，主力
+    # - https://8.8.8.8/dns-query   # Google DoH，备用
+    # 以下已注释：纯 IP UDP 明文查询，无加密，与上方 DoH 服务商重复，冗余
+    # - 8.8.8.8
+    # - 1.1.1.1
+    # 以下已注释：域名形式的 DoH 与上方 IP 形式的 DoH 指向同一服务商，冗余
+    # - https://dns.google/dns-query
+    # - https://dns.cloudflare.com/dns-query
+  # direct-nameserver:
+  #   - 116.228.111.118
+  #   - 180.168.255.18
+    # - https://doh.pub/dns-query
+    # - https://223.5.5.5/dns-query
+  # direct-nameserver-follow-policy:false
+
+  # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
+  nameserver-policy:
+    # --- 从原始配置迁移的机场专属节点 DNS 解析策略 ---
+    "+.v51124-4.qpon": "tcp://9d9161805b3894600d09cafb3e4b2e2aef43076b.9fe06a.fyi:54"
+  #   "rule-set:private_domain,cn_domain":
+  #     - 223.5.5.5
+  #   "rule-set:gfw_domain,geolocation-!cn":
+  #     - tls://8.8.4.4#🚀 默认代理
+  # 国内域名/私有域名：使用国内优质 DNS（响应快）
+    geosite:private,cn,category-games@cn:
+      - 116.228.111.118
+      - 180.168.255.18
+      # - 223.5.5.5
+      # - https://doh.pub/dns-query
+      # - tls://223.5.5.5:853
+    # [已注释] geosite:geolocation-!cn 本地 DNS 策略
+    # 原因：fake-ip 模式下，国外域名不在 fake-ip-filter 内，
+    # Mihomo 会直接将原始域名发送给机场代理节点，
+    # 由机场服务器自行解析 DNS，无需在本地指定外部 DNS。
+    # 此处若保留，仅影响内部规则匹配的后台查询，语义冗余。
+    # 回退行为：由 fallback（Google/Cloudflare via 代理）接管，效果等价。
+    # geosite:geolocation-!cn:
+    #   - https://dns.google/dns-query
+    #   - https://dns.cloudflare.com/dns-query
+    #   - https://1.1.1.1/dns-query
+    #   - https://8.8.8.8/dns-query
+
+
+
+  # 4. 智能过滤器：发现是国外 IP 或被墙域名，自动丢弃国内 DNS 结果，采用 fallback 的结果
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    # geosite:
+    #   - gfw
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/8
+      - 127.0.0.0/8
+      - 10.0.0.0/8
+    domain:
+      - "geosite:geolocation-!cn"
+      - "geosite:gfw"
+
+
+# 出站策略
+pr: &pr {type: select, proxies: [🚀 默认代理, 直连, 🇭🇰 香港节点, 🔯 香港故转, ♻️ 香港自动, 🌎 台湾节点, 🇯🇵 日本节点, 🔯 日本故转, ♻️ 日本自动, ♻️ 日本自动2, ♻️ 日本低流量自动, 🇺🇲 美国节点, ♻️ 美国自动, ♻️ 自动选择, 🌐 全部节点]}
+proxy-groups:
+  - {name: 🚀 默认代理, type: select, proxies: [直连, 🇭🇰 香港节点, 🔯 香港故转, ♻️ 香港自动, 🌎 台湾节点, 🇯🇵 日本节点, 🔯 日本故转, ♻️ 日本自动, ♻️ 日本自动2, ♻️ 日本低流量自动, 🇺🇲 美国节点, ♻️ 美国自动, ♻️ 自动选择, 🌐 全部节点]}
+
+  - {name: 🎯 直连, type: select, proxies: [直连, 🚀 默认代理]}
+
+  - {name: 🤖 diy-direct, <<: *pr}
+  - {name: 🤖 diy-hk, <<: *pr}
+  - {name: 🤖 diy-jp, <<: *pr}
+  - {name: 🤖 diy-low, <<: *pr}
+  - {name: 🤖 diy-us, <<: *pr}
+
+  - {name: 📹 YouTube, <<: *pr}
+  - {name: 🍀 Google, <<: *pr}
+  - {name: 🤖 ChatGPT, <<: *pr}
+  - {name: 👨🏿‍💻 GitHub, <<: *pr}
+  - {name: 🐬 OneDrive, <<: *pr}
+  - {name: 🪟 Microsoft, <<: *pr}
+  - {name: 🕹️ Steam, <<: *pr}
+  - {name: 🕹️ Steam-cn, <<: *pr}
+  - {name: 🎵 TikTok, <<: *pr}
+  - {name: 🎵 Oculus, <<: *pr}
+  - {name: 📲 Telegram, <<: *pr}
+  # - {name: 🎥 NETFLIX, <<: *pr}
+  - {name: ✈️ Speedtest, <<: *pr}
+  - {name: 🇨🇳 cn_ip_domain, <<: *pr}
+  - {name: 👁️ private_domain, <<: *pr}
+  - {name: 📛 gfw_domain, <<: *pr}
+  - {name: 🌎 geolocation-!cn, <<: *pr}
+  # - {name: 💶 PayPal, <<: *pr}
+  - {name: 🍎 Apple, type: select, proxies: [直连, 🚀 默认代理]}
+  - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)港|hk|hongkong|hong kong"}
+  - {name: 🔯 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 1200, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
+  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 1200, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
+  - {name: 🌎 台湾节点, type: select, include-all: true, filter: "(?i)台"}
+  - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日|jp|japan"}
+  - {name: 🔯 日本故转, type: fallback, include-all: true, tolerance: 20, interval: 1200, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
+  # 日本全部节点 但自动化测试
+  - {name: ♻️ 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 1200, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
+  # 日本全部节点 但自动化测试 但是小倍率的
+  - {name: ♻️ 日本自动2, type: url-test, include-all: true, tolerance: 20, interval: 1200, filter: "(?=.*((?i)x0\\.[2-8]))^((?!(港|台|韩|新|美)).)*$" }
+  - {name: ♻️ 日本低流量自动, type: url-test, include-all: true, tolerance: 20, interval: 1200, filter: "(?=.*(下载|免费))^((?!(港|台|韩|新|美)).)*$" }
+  - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美|us|unitedstates|united states"}
+  - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 1200, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
+  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 1200, filter: "^((?!(直连)).)*$"}
+  - {name: 🐟 漏网之鱼, <<: *pr}
+  - {name: 🌐 全部节点, type: select, include-all: true}
+
+# 规则匹配
+rules:
+  # 第1梯队
+  # 过滤广告
+  - RULE-SET,diy-no,REJECT
+  - RULE-SET,ads_all,REJECT
+  - RULE-SET,privacy,REJECT
+  # 特定网络
+
+  - RULE-SET,diy-direct,🤖 diy-direct
+  - RULE-SET,diy-hk,🤖 diy-hk
+  - RULE-SET,diy-jp,🤖 diy-jp
+  - RULE-SET,diy-low,🤖 diy-low
+  - RULE-SET,diy-us,🤖 diy-us
+  - RULE-SET,oculus_domain,🎵 Oculus
+
+  - RULE-SET,private_domain,👁️ private_domain
+
+  # 第2梯队
+  # - SRC-IP-CIDR,192.168.30.240/32,♻️ 日本低流量自动
+  # - DOMAIN-SUFFIX,api.github.com,🚀 默认代理
+
+  # 第3梯队
+  # - IP-CIDR,104.244.43.248,🚀 默认代理
+  # - IP-CIDR,104.244.46.208,🚀 默认代理
+
+  # 规则组
+  - RULE-SET,apple_domain,🍎 Apple
+  - RULE-SET,ai,🤖 ChatGPT
+  - RULE-SET,github_domain,👨🏿‍💻 GitHub
+  - RULE-SET,youtube_domain,📹 YouTube
+  - RULE-SET,google_domain,🍀 Google
+  - RULE-SET,onedrive_domain,🐬 OneDrive
+  - RULE-SET,steam_domain,🕹️ Steam
+  - RULE-SET,steam-cn_domain,🕹️ Steam-cn
+  - RULE-SET,microsoft_domain,🪟 Microsoft
+  - RULE-SET,tiktok_domain,🎵 TikTok
+  - RULE-SET,speedtest_domain,✈️ Speedtest
+  - RULE-SET,telegram_domain,📲 Telegram
+  # - RULE-SET,netflix_domain,🎥 NETFLIX
+  # - RULE-SET,paypal_domain,💶 PayPal
+
+  - RULE-SET,gfw_domain,📛 gfw_domain
+  - RULE-SET,geolocation-!cn,🌎 geolocation-!cn
+  - RULE-SET,cn_domain,🇨🇳 cn_ip_domain
+
+  - RULE-SET,google_ip,🍀 Google,no-resolve
+  # - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
+  - RULE-SET,telegram_ip,📲 Telegram,no-resolve
+  - RULE-SET,cn_ip,🇨🇳 cn_ip_domain
+  # - SOURCE-IP-CIDR,192.168.30.240/32,♻️ 日本低流量自动
+  - MATCH,🐟 漏网之鱼
+
+
+# 规则集
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  class: &class {type: http, interval: 86400, behavior: classical, format: text}
+  domain2: &domain2 {type: http, interval: 86400, behavior: domain}
+
+rule-providers:
+
+  ads_all: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"}
+  privacy: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/privacy.mrs"}
+
+  diy-direct: { <<: *class, url: "https://raw.githubusercontent.com/smart-z/somefile/refs/heads/master/clash%20rule/direct.list"}
+  diy-hk: { <<: *class, url: "https://raw.githubusercontent.com/smart-z/somefile/refs/heads/master/clash%20rule/hk.list"}
+  diy-us: { <<: *class, url: "https://raw.githubusercontent.com/smart-z/somefile/refs/heads/master/clash%20rule/us.list"}
+  diy-jp: { <<: *class, url: "https://raw.githubusercontent.com/smart-z/somefile/refs/heads/master/clash%20rule/jp.list"}
+  diy-no: { <<: *class, url: "https://raw.githubusercontent.com/smart-z/somefile/refs/heads/master/clash%20rule/no.list"}
+  diy-low: { <<: *class, url: "https://raw.githubusercontent.com/smart-z/somefile/refs/heads/master/clash%20rule/low.list"}
+
+  oculus_domain: { <<: *class, url: "https://raw.githubusercontent.com/smart-z/somefile/refs/heads/master/clash%20rule/oculus.list"}
+
+  private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+  ai: {  <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-chat-!cn.mrs"}
+  youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
+  google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
+  github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
+  telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
+  # netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
+  # paypal_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
+  onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
+  steam_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"}
+  steam-cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.mrs"}
+  microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
+  apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
+  speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
+  tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
+  gfw_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"}
+  geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
+  cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
+
+  cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
+  google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
+  telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
+  # netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
+
+
+
+mode: rule
+# find-process-mode: off
+keep-alive-idle: 900
+keep-alive-interval: 600
+log-level: warning
+global-client-fingerprint: chrome
+external-ui: ui
+external-ui-url: https://github.com/MetaCubeX/Razord-meta/archive/refs/heads/gh-pages.zip
+secret: "123456"
+authentication:
+  - nikki:917908
+  - i:000000
+tun:
+  # dns-hijack:
+  #   - tcp://any:53
+  #   - udp://any:53
+  enable: true
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  device: nikki
+  stack: mixed
+  mtu: 1450
+  gso: true
+  gso-max-size: 65536
+hosts:
+  # 从原始配置迁移的时间同步服务器
+  time.facebook.com:
+    - 17.253.84.125
+  time.android.com:
+    - 17.253.84.125
+  localhost:
+    - 127.0.0.1
+    - ::1
+  11.com:
+    - 192.168.31.1
+  33.com:
+    - 192.168.31.3
+  ss.s:
+    - 192.168.31.251
+  s.zz:
+    - 192.168.31.251
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
