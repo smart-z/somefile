@@ -68,3 +68,6 @@
 
 # 127.0.0.1 releases.arc.net
 127.0.0.1 api.devontechnologies.com
+
+127.0.0.1 api.lemonsqueezy.com
+127.0.0.1 screen.studio
