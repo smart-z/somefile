@@ -30,3 +30,5 @@ DOMAIN-SUFFIX,models.topazlabs.com
 DOMAIN-SUFFIX,linuxdo.org
 DOMAIN-SUFFIX,supercell.com
 DOMAIN-SUFFIX,lmstudio.ai
+
+PROCESS-NAME,gdirect
