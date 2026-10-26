@@ -32,3 +32,8 @@ DOMAIN-SUFFIX,supercell.com
 DOMAIN-SUFFIX,lmstudio.ai
 
 PROCESS-NAME,gdirect
+
+DOMAIN,drive.usercontent.google.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN,www.googleapis.com
+DOMAIN,drive.googleapis.com
